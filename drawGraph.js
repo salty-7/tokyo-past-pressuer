@@ -18,6 +18,7 @@ async function drawGraph() {
     todayIndex.fill(0);
     todayIndex[currentIndex] = 1030;
 
+    // グラフ描画
     var ctx = document.getElementById("myChart");
     var myChart = new Chart(ctx, {
         type: 'bar',
@@ -36,12 +37,14 @@ async function drawGraph() {
             ],
         },
         options: {
-            indexAxis: 'x',
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
             scales: {
-                y: {
+                x: {
                     min: 970,
                     max: 1030
-                }
+                },
             },
             plugins: {
                 legend: {
