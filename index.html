@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>東京都の過去2週間+未来1週間の気圧</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.umd.js"
+        integrity="sha512-+Aecf3QQcWkkA8IUdym4PDvIP/ikcKdp4NCDF8PM6qr9FtqwIFCS3JAcm2+GmPMZvnlsrGv1qavSnxL8v+o86w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="drawGraph.js"></script>
+</head>
+
+<body>
+    <h1>東京都の過去2週間+未来1週間の気圧</h1>
+    <hr>
+    <canvas id="myChart"></canvas>
+    <hr>
+    <small>Weather data by <a href="https://open-meteo.com/">Open-Meteo.com</a></small>
+    <hr>
+    <small>created by <a href="https://twitter.com/salty_7">@salty_7</a></small>
+
+    <script>
+        drawGraph();
+    </script>
+</body>
+
+</html>
